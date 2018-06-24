@@ -1,0 +1,46 @@
+﻿@model List<Cotizaciones.Models.Cliente>
+
+@{
+	 ViewBag.Title = "Lista de Clientes";
+}
+
+<body>
+    <div class="container">
+        <h2>@ViewBag.Title</h2>
+        <div class="container">
+                <a href="#" class="btn btn-primary btn-sm">Agregar</a>
+                <a href="#" class="btn btn-primary btn-sm">Buscar</a>
+                <a href="#" class="btn btn-primary btn-sm">Editar</a>
+                <a href="#" class="btn btn-primary btn-sm">Listar</a>
+        </div>
+        <form id="registrarForm" style="display:none;">
+            <label>Nombre</label>
+            <input type="text">
+            <input type="submit" />
+        </form>
+        <br />
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TDoc.</th>
+                    <th>NDoc</th>
+                    <th>Razon Social</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+            {
+                    <tr>
+                        <td>@item.ID</td>
+                        <td>@item.TDocumento</td>
+                        <td>@item.NDocumento</td>
+                        <td>@item.RazonSocial</td>
+                    </tr>}
+            </tbody>
+        </table>
+        Se encontraron @Model.Count registros
+    </div>
+</body>
