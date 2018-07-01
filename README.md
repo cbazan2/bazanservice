@@ -34,7 +34,7 @@ Lista de clientes registrados
 
 ##	Diseño de base de datos estructurada
 
-![a](https://image.ibb.co/d5scuy/5.jpg)
+![a](https://image.ibb.co/ecUGnJ/12.jpg)
 
 #	Problemas encontrado en el desarrollo
 
